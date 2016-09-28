@@ -1,6 +1,6 @@
 {
   "name": "less-extract-variables",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A less.js plugin for evaluating and extracting Less variables",
   "main": "index.js",
   "scripts": {
