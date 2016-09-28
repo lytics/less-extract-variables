@@ -1,0 +1,4 @@
+extends:
+- ./node_modules/lytics-js-styleguide/.eslintrc
+env:
+  node: true

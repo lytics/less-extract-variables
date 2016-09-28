@@ -1,0 +1,28 @@
+{
+  "name": "less-extract-variables",
+  "version": "0.0.1",
+  "description": "A less.js plugin for evaluating and extracting Less variables",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lytics/less-extract-variables.git"
+  },
+  "keywords": [
+    "less plugin"
+  ],
+  "author": "Christopher Thorn <chris.thorn@lytics.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lytics/less-extract-variables/issues"
+  },
+  "homepage": "https://github.com/lytics/less-extract-variables#readme",
+  "dependencies": {
+    "promise": "^7.1.1"
+  },
+  "devDependencies": {
+    "lytics-js-styleguide": "^1.0.2"
+  }
+}
