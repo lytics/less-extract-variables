@@ -2,14 +2,18 @@
 
 var VariableExtractor = require('./lib/variable-extractor');
 
-module.exports = {
-  _visitor: this._visitor = new VariableExtractor(),
+module.exports = VariableExtractorPlugin;
 
+function VariableExtractorPlugin() {
+  this.visitor = new VariableExtractor();
+}
+
+VariableExtractorPlugin.prototype = {
   install: function install(less, pluginManager) {
-    pluginManager.addVisitor(this._visitor);
+    pluginManager.addVisitor(this.visitor);
   },
 
   getVariables: function getVariables() {
-    return this._visitor.getVariables();
-  }
+    return this.visitor.promise();
+  },
 };
